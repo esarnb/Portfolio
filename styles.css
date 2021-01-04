@@ -1,6 +1,6 @@
 body {
-    background-color: rgb(34, 33, 33);
-    color: white;
+    /* background-color: rgb(34, 33, 33);
+    color: white; */
 }
 
 .tcenter {
@@ -15,4 +15,13 @@ body {
 
 .child-item {
  width: 50px;   
+}
+
+.card {
+    width: fit-content;
+}
+
+
+.line-break {
+    width: 100%;
 }
