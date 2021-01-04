@@ -1,0 +1,18 @@
+body {
+    background-color: rgb(34, 33, 33);
+    color: white;
+}
+
+.tcenter {
+    text-align: center;
+}
+
+.dcenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.child-item {
+ width: 50px;   
+}
