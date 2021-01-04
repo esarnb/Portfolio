@@ -50,6 +50,11 @@ hr {
     width: 100%;
 }
 
+todo {
+    color: red;
+    font-size: small;
+}
+
 /* header */
 nav {
 
