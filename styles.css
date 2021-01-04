@@ -5,12 +5,12 @@ body {
 
 .child-page {
     background-color: rgb(44, 44, 44);
-    height: 100vh;
+    height: 100%;
 }
 
 #page {
-    /* height: 100vh;
-    width: auto; */
+    /* height: 100vh; */
+    /* width: auto;  */
 }
 
 #page content h3, .sections{
@@ -63,6 +63,15 @@ nav {
 content {
 
 }
+
+.goals {
+    background-color: rgb(197, 197, 197);
+}
+
+.pCards {
+    background-color: rgb(187, 224, 226);
+}
+
 /* footer */
 footer {
     color: white;
