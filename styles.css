@@ -1,4 +1,7 @@
-/* Pages */
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: rgb(42, 42, 42);
 }
@@ -16,9 +19,6 @@ body {
 #page content h3, .sections{
     color: white;
 }
-
-
-/* classes */
 
 a[target="_blank"]::after {
     /* content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAQElEQVR42qXKwQkAIAxDUUdxtO6/RBQkQZvSi8I/pL4BoGw/XPkh4XigPmsUgh0626AjRsgxHTkUThsG2T/sIlzdTsp52kSS1wAAAABJRU5ErkJggg==); */
@@ -42,10 +42,6 @@ hr {
     align-items: center;
 }
 
-.card {
-    width: fit-content;
-}
-
 .line-break {
     width: 100%;
 }
@@ -53,15 +49,6 @@ hr {
 todo {
     color: red;
     font-size: small;
-}
-
-/* header */
-nav {
-
-}
-/* content */
-content {
-
 }
 
 #future-goals {
@@ -73,22 +60,55 @@ content {
     
 }
 
-.pCards {
-    background-color: rgb(187, 224, 226);
-    overflow: auto;
-    width: 250px;
-    height: 500px;
+/*
+
+    Responsive Project Cards 
+
+*/
+
+/* Float four columns side by side */
+.column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
 }
 
-/* footer */
-footer {
-    color: white;
+/* Remove extra left and right margins, due to padding in columns */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
-/* Media Queries */
-@media only screen and (max-width: 600px) {
-    .pCards {    
-        width: 500px;
-        height: 200px;
+/* Style the counter cards */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+}
+
+.img-container {
+    height: 200px;
+    width: auto;
+}
+
+.img-proj {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
     }
 }
+
