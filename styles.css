@@ -64,6 +64,10 @@ content {
 
 }
 
+#future-goals {
+    text-align: left;
+}
+
 .goals {
     background-color: rgb(197, 197, 197);
 }
