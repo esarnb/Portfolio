@@ -42,22 +42,8 @@ hr {
     align-items: center;
 }
 
-.line-break {
-    width: 100%;
-}
-
-todo {
-    color: red;
-    font-size: small;
-}
-
 #future-goals {
     text-align: left;
-}
-
-.goals {
-    background-color: rgb(197, 197, 197);
-    
 }
 
 /*
@@ -95,12 +81,15 @@ todo {
     background-color: #b0f7ff98;
     overflow: auto;
     height: 400px;
-
 }
 
-.img-container {
-    height: auto;
-    width: auto;
+.card-text {
+    margin-top: 15px;
+}
+
+.card-btn {
+    width: 100px;
+    margin-top: 15px;
 }
 
 .img-proj {
@@ -110,7 +99,11 @@ todo {
     margin: 0 auto;
 }
 
-/* Responsive columns - one column layout (vertical) on small screens */
+/* 
+
+    Responsive columns - one column layout (vertical) on small screens 
+
+*/
 
 @media screen and (min-width: 1200px) {
     .column {
@@ -136,3 +129,44 @@ todo {
     }
 }
 
+
+/* 
+
+    Animations for divs
+
+*/
+
+
+@keyframes moveRight {
+    from {left: 200px;}
+    to {left: 0px;}
+}
+
+.rightAnim {
+    position: relative;
+    animation: moveRight 5s 1, fadeIn ease 5s;
+    justify-content: right;
+    
+}
+
+@keyframes moveLeft {
+    from {right: 200px;}
+    to {right: 0px;}
+}
+
+.leftAnim {
+    position: relative;
+    animation: moveLeft 5s 1, fadeIn ease 5s;
+    justify-content: left;
+}
+
+@keyframes fadeIn {
+    0% { opacity:0; }
+    100% { opacity:1; } 
+}
+ 
+.fadeInto {
+    animation: fadeIn ease 5s;
+}
+
+  
