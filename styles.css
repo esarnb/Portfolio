@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 body {
@@ -11,13 +12,12 @@ body {
     height: 100%;
 }
 
-#page {
-    /* height: 100vh; */
-    /* width: auto;  */
-}
-
 #page content h3, .sections{
     color: white;
+}
+
+.title {
+    font-family: 'Lemonada', cursive;
 }
 
 a[target="_blank"]::after {
