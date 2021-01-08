@@ -16,6 +16,10 @@ body {
     color: white;
 }
 
+#about-myself {
+    /* margin-top: 50px; */
+}
+
 .title {
     font-family: 'Lemonada', cursive;
 }
@@ -78,9 +82,10 @@ hr {
     padding: 16px;
     margin: 8px;
     text-align: center;
-    background-color: #b0f7ff98;
+    background-color: #94f4ffc9;
     overflow: auto;
     height: 400px;
+    visibility: hidden;
 }
 
 .card-text {
