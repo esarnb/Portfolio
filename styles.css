@@ -3,23 +3,43 @@
     font-family: 'Josefin Sans', sans-serif;
 }
 
-body {
-    background-color: rgb(42, 42, 42);
+/* 
+
+    Color Scheme
+
+*/
+
+
+#navHeader {
+    background-color: #1f2833 !important;
 }
 
-.child-page {
-    background-color: rgb(44, 44, 44);
-    height: 100%;
+.navbar-brand {
+    color: #66fcf1 !important;
 }
 
-#page content h3, .sections{
-    color: white;
+body, .child-page{
+    background-color: #0b0c10 !important;
 }
 
-#about-myself {
-    /* margin-top: 50px; */
+#page {
+    color: #66fcf1;
 }
 
+.card {
+    background-color: #94f4ffc9;
+    color: rgb(90, 11, 126);
+}
+
+.card a {
+    color: rgb(120, 42, 155);
+}
+
+/* 
+
+    General Styling
+
+*/
 .title {
     font-family: 'Lemonada', cursive;
 }
@@ -30,10 +50,6 @@ a[target="_blank"]::after {
     /* content: "  🗗" */
     /* content: "  ❐" */
     content: "  ⧉"
-}
-
-hr {
-    color: rgb(0, 0, 0);   
 }
 
 .tcenter {
@@ -78,13 +94,14 @@ hr {
 
 /* Style the counter cards */
 .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    
+    text-align: center;
     padding: 16px;
     margin: 8px;
-    text-align: center;
-    background-color: #94f4ffc9;
-    overflow: auto;
     height: 400px;
+
+    overflow: auto;
     visibility: hidden;
 }
 
