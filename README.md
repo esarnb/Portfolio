@@ -1,6 +1,6 @@
 # My Custom Portfolio
 
-## Basic Technologies Used: 
+### Basic Technologies Used: 
 
 * Bootstrap5
     *   Navbar, Cards, Theme Toggle Button
@@ -11,7 +11,7 @@
 
 * HTML & CSS with CSS Animations
     * Media Queries and Keyframes
-#
+
 
 ## Alternative Technologies can be used:
 * Material UI, Ant Design, Semantic UI, React UI
@@ -19,7 +19,6 @@
 * JSX ternery with component states/hooks to show/hide data.
 * Animation libraries: React Motion or Ant Design Motion
 
-#
 ## My Personal Media
 
 Portfolio: [https://esarnb.github.io/portfolio](https://esarnb.github.io/portfolio)
