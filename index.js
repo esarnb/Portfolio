@@ -41,16 +41,16 @@ $(document).ready(function() {
 function lightTheme() {
     $("#theme-text").text("Light")//.attr("class", "Light")
 
-    $("#navHeader, .card").each(function(){ 
-        $(this).attr('style', function(i,s) { return /*(s || '') + */ "background-color: #9bd1bc !important"})
-    }); 
-    $("#page, .navbar-brand, .card").each(function(){ 
+    $("#navHeader").attr('style', function(i,s) { return /*(s || '') + */ "background-color: #9bd1bc !important"})
+    $("#page, .navbar-brand").each(function(){ 
         $(this).attr('style', function(i,s) { return /*(s || '') + */ "color: rgb(77, 48, 86) !important"})
     }); 
     $("body, .child-page").each(function(){ 
         $(this).attr('style', function(i,s) { return /*(s || '') + */ "background-color: #c9c6bd !important"})
     }); 
     $(".card a").attr('style', function(i,s) { return /*(s || '') + */ "color: rgb(50, 25, 25) !important"})
+    $(".card").css({"background-color": "#9bd1bc", "color": "rgb(77, 48, 86)"})
+
 
     // $("#navHeader, .card").each(function(){ 
     //     $(this).css({"background-color": "#9bd1bc !important"})
@@ -101,8 +101,11 @@ function darkTheme() {
     $("body, .child-page").each(function(){ 
         $(this).attr('style', function(i,s) { return /*(s || '') + */ "background-color: #2c3531 !important"})
     }); 
-    $(".card").attr('style', function(i,s) { return /*(s || '') + */ "color: rgb(90, 11, 126) !important; background-color: #8df0fba8 !important"})
+    // $(".card").attr('style', function(i,s) { return /*(s || '') + */ "color: rgb(90, 11, 126) !important; background-color: #8df0fba8 !important"})
     $(".card a").attr('style', function(i,s) { return /*(s || '') + */ "color: rgb(50, 25, 25) !important"})
+
+    $(".card").css({"background-color": "#8df0fba8", "color": " rgb(90, 11, 126)"})
+
 
     // $("#navHeader").css({"background-color": "#1f2833 !important"})
     // $("#page, .navbar-brand").each(function(){ 
