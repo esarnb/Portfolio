@@ -9,13 +9,32 @@
 
 */
 
+/* Light Theme   */
 
+/*  
+#navHeader, .card {
+    background-color: #9bd1bc !important;
+}
+
+#page, .navbar-brand, .card {
+    color: rgb(77, 48, 86) !important;
+}
+
+body, .child-page{
+    background-color: #c9c6bd !important;
+}
+
+.card a {
+    color: rgb(50, 25, 25);
+}  */
+
+/*  Dark Theme  */
 #navHeader {
-    background-color: #116466 !important;
+    background-color: #1f2833 !important;
 }
 
 #page, .navbar-brand {
-    color: #ffcb9a !important;
+    color: #42ddd3 !important;
 }
 
 body, .child-page{
@@ -23,13 +42,14 @@ body, .child-page{
 }
 
 .card {
-    background-color: #94f4ffc9;
+    background-color: #8df0fba8;
     color: rgb(90, 11, 126);
 }
 
 .card a {
     color: rgb(120, 42, 155);
-}
+} 
+
 
 /* 
 
@@ -56,6 +76,16 @@ a[target="_blank"]::after {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.floatRight {
+    float: right;
+    margin-left: 15px;
+    margin-top: 8px;
+}
+
+.floatLeft {
+    float: left;
 }
 
 #future-goals {
