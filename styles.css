@@ -5,30 +5,11 @@
 
 /* 
 
-    Color Scheme
+    Color Scheme ---> View toggler in JS file
 
 */
 
-/* Light Theme   */
-
-/*  
-#navHeader, .card {
-    background-color: #9bd1bc !important;
-}
-
-#page, .navbar-brand, .card {
-    color: rgb(77, 48, 86) !important;
-}
-
-body, .child-page{
-    background-color: #c9c6bd !important;
-}
-
-.card a {
-    color: rgb(50, 25, 25);
-}  */
-
-/*  Dark Theme  */
+/*  Initialize with Dark Theme  */
 #navHeader {
     background-color: #1f2833 !important;
 }
@@ -61,7 +42,6 @@ body, .child-page{
 }
 
 a[target="_blank"]::after {
-    /* content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAQElEQVR42qXKwQkAIAxDUUdxtO6/RBQkQZvSi8I/pL4BoGw/XPkh4XigPmsUgh0626AjRsgxHTkUThsG2T/sIlzdTsp52kSS1wAAAABJRU5ErkJggg==); */
     /* content: "  🔗" */
     /* content: "  🗗" */
     /* content: "  ❐" */
@@ -189,7 +169,7 @@ a[target="_blank"]::after {
 
 /* 
 
-    Animations for divs
+    Animations for content divs
 
 */
 
