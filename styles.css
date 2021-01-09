@@ -11,19 +11,15 @@
 
 
 #navHeader {
-    background-color: #1f2833 !important;
+    background-color: #116466 !important;
 }
 
-.navbar-brand {
-    color: #66fcf1 !important;
+#page, .navbar-brand {
+    color: #ffcb9a !important;
 }
 
 body, .child-page{
-    background-color: #0b0c10 !important;
-}
-
-#page {
-    color: #66fcf1;
+    background-color: #2c3531 !important;
 }
 
 .card {
