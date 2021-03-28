@@ -10,10 +10,10 @@ $(document).ready(function() {
 `
 <div class="ui card cards-light">
     <div class="image">
-        <img src="/images/test/placeholder_kristy.png">
+        <img src="${x.img}">
     </div>
     <div class="content">
-        <a class="header">Kristy</a>
+        <a class="header">${x.title}</a>
     <div class="meta">
         <span>Joined in 2013</span>
     </div>
