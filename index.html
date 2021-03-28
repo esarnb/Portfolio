@@ -9,229 +9,54 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;500;700&family=Lemonada:wght@300;500;700&display=swap" rel="stylesheet">    
 
-    <!-- Bootstrap 5 CSS-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    
+    <!-- Semantic UI CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ==" crossorigin="anonymous" />
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./styles.css" type="text/css" /> 
 </head>
 <body>
-    <div id="page">
-        <header>
-            <nav id="navHeader" class="navbar navbar-expand-lg navbar-light bg-light">
-                <div class="container-md">
-                    <a class="navbar-brand" href="#">Home</a>
-                    
-                    <div class="navbar-brand">Esar Behlum</div>
-                    <span>
 
-                        <span class="floatLeft">
-                            <div class="dropdown">
-                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Pages
-                                </button>
+    <!-- Navbar -->
+        <!-- Several Tabs clickable -->
+    <!-- Body -->
+        <!-- About me -->
+            <!-- 2-3 sections -->
 
-                                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
-                                    <li><a id="proj-tab" class="dropdown-item" href="#projects-list">Projects</a></li>
-                                    <li><a class="dropdown-item" href="./documents/resume.pdf" target="_blank">Resume</a></li>
-                                    <li><hr class="dropdown-divider"></li>
-                                    <li><a class="dropdown-item" href="https://github.com/esarnb" target="_blank">Github</a></li>
-                                    <li><a class="dropdown-item" href="https://www.linkedin.com/in/esarnb/" target="_blank">LinkedIn</a></li>
-                                    <li><a class="dropdown-item" href="https://esarnb.com" target="_blank">My Website</a></li>
-                                </ul>
-                            </div>
-                        </span>
-                        
-                        <div class="floatRight form-check form-switch">
-                            <input id="theme-btn" class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
-                            <label class="form-check-label" for="flexSwitchCheckChecked"><div id="theme-text" class="Dark">Dark</div></label>
-                        </div>
-                    </span>
-                </div>
-            </nav>
-        </header>
-        
-        <content>
-            
-            <div class="child-page">
-                <h3 id="about-myself"class="dcenter pt-5 title">Me, Myself, and I</h3>
-                
-                <div class="container sections tcenter">
-                    <div class="container-fluid">
+        <!-- Project Cards -->
+            <!-- with animation on hover -->
 
-                        <br /> <br />
-                        
-                        <div class="rightAnim">
-                            <h4 class="title">Who I am:</h4>
-                            <div>
-                                My name is Esar, I am a Junior Web Developer.
-                                <br />Currently pursuing a career in ReactJS web development using
-                                <br /> MERN [MongoDB, ExpressJS, ReactJS, & NodeJS].
-                            </div>
-                        </div>
-
-                        <br /> <br />
-                        
-                        <div class="leftAnim">
-                            <h4 class="title">Previous Education:</h4>
-                            <div>
-                                <br />Graduated from The Ohio State University with a Bachelors in Geographic Information Sciences,
-                                <br />Completed a Full-Stack Flex bootcamp program for JavaScript through the UC Berkeley Extension in San Francisco, California.
-                            </div>
-                        </div>
-
-                        <br /> <br />
-
-                        <div class="rightAnim">
-                            <h4 class="title">What I have learned:</h4>
-                            <div>
-                                <br />Able to create html5 websites using CSS/JS, incorporating libraries such as JQuery and MomentJS, CSS frameworks like Bootstrap5 and AntDesign, 
-                                <br />databases like MySQL & MongoDB, webservers such as ExpressJS and Apache or Nginx, and UI JS frameworks like ReactJS. 
-                                <br />Utilized Firebase and Firestore Realtime databases, AWS EC2 and VPS instances to host applications, and AWS S3 Buckets to serve images.
-                            </div>
-                        </div>
-                        
-                        <br /> <br />
-
-                        <div class="leftAnim">
-                            <h4 class="title">Future Goals:</h4>
-                            <div id="future-goals" class="dcenter">
-                                <ul>
-                                    <li>Further expand skillsets from ReactJS into VueJS and/or AngularJS.</li>
-                                    <li>Create a chat application utilizing React and realtime databases or websockets.</li>
-                                    <li>Learn React Redux for unified systematic data synchronization and other alternatives: RxJS or React Observables.</li>
-                                    <li>Learn React Native and Android Mobile Development to sync with web applications; building a full stack company application.</li>
-                                </ul>
-                            </div>
-                        </div>
-
-                    </div>
-                    
-                </div>
-
-            </div>
-
-            <br /> <br /> <br /> <br />
-
-            <div class="child-page">
-                    
-                <h3 id="projects-list"class="dcenter pt-5"> <u>Group Projects</u></h3>
-
-                <div class="dcenter row">
-                    
-                    <div class="column">
-                        <div class="card"> 
-                            <h4 class="title">Venvi</h4>
-                            <div>
-                                <img class="img-proj" src="images/venvi.jpg" alt="Screenshot with several cars on display with car model and year." />
-                                <div class="card-text"> Utilized AWS S3, PassportJS, and Express to serve accounts & pictures for the MERN Car Reviews web app. Frontend design consisting of MaterialUI & AntDesign.</div>
-                            </div>
-                            <div>
-                                <button class="card-btn"><a href="https://github.com/esarnb/venvi-fe" target="_blank">Repo</a></button>
-                                <button class="card-btn"><a href="https://esarnb.github.io/venvi-fe/" target="_blank">Live</a></button>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="column">
-                        <div class="card">  
-                            <h4 class="title">Savant</h4>
-                            <div>
-                                <img class="img-proj" src="images/savant.jpg" alt="Screenshot of a website with youtube livestream videos." />
-                                <div class="card-text"> Developed a livestream classroom interface using YoutubeAPI and Google Calendar to serve and save future videos or livestreams, AWS S3 and Firebase for profiles, MySQL to organize personalized favorites list.</div>
-                            </div>
-                            <div>
-                                <button class="card-btn"><a href="https://github.com/esarnb/Savant" target="_blank">Repo</a></button>
-                                <button class="card-btn"><a href="http://savant-eb.herokuapp.com/" target="_blank">Live</a></button>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="column">
-                        <div class="card">  
-                            <h4 class="title">Plan-It</h4>
-                            <div>
-                                <img class="img-proj" src="images/plan-it.jpg" alt="Screeenshot of a personal to-do list section with tabs for other services." />
-                                <div class="card-text"> Ran AJAX calls on BART Trains, Weather, and Yelp API to display user search results, alongside Firebase Auth & RealtimeDB to store personalized notes.</div>
-
-                            </div>
-                            <div>
-                                <button class="card-btn"><a href="https://github.com/esarnb/Plan-It" target="_blank">Repo</a></button>
-                                <button class="card-btn"><a href="https://esarnb.github.io/Plan-It/" target="_blank">Live</a></button>
-                            </div>
-                        </div>  
-                    </div>
-                </div>
-                
-
-                <h3 id="projects-list"class="dcenter pt-5"> <u>Personal Projects</u></h3>
-
-                <div class="dcenter row">
-                    
-                    <div class="column">
-                        <div class="card"> 
-                            <h4 class="title">Galactic Guesser</h4>
-                            <div>
-                                <img class="img-proj" src="images/galactic.jpg" alt="Screenshot showing a row of four planets with total points below." />
-                                <div class="card-text"> Each planet contains a value, and you must match your score to the goal. The catch is, you must match it perfectly...if you go over, you lose!
-                                    <br /> Built with JQuery, HTML, CSS.
-                                </div>
-                            </div>
-                            <div>
-                                <button class="card-btn"><a href="https://github.com/esarnb/Galactic-Guesser" target="_blank">Repo</a></button>
-                                <button class="card-btn"><a href="https://esarnb.github.io/Galactic-Guesser/" target="_blank">Live</a></button>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="column">
-                        <div class="card"> 
-                            <h4 class="title">Google Books</h4>
-                            <div>
-                                <img class="img-proj" src="images/books.jpg" alt="Screenshot of a Google listing for the book: Ender's Game. " />
-                                <div class="card-text">Google Books is an easy to use React application where you can search for a book title, and save certain search results.
-                                    <br /> Built with ReactJS, NodeJS, & Google Books API V1.
-                                </div>
-                            </div>
-                            <div>
-                                <button class="card-btn"><a href="https://github.com/esarnb/google-books" target="_blank">Repo</a></button>
-                                <button class="card-btn"><a href="https://google-books-search-sr.herokuapp.com/" target="_blank">Live</a></button>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="column">
-                        <div class="card"> 
-                            <h4 class="title">Word Guess Game</h4>
-                            <div>
-                                <img class="img-proj" src="images/word-guess.jpg" alt="Classroom setting with element name, wins, losses, and used letters viewed on chalkboard." />
-                                <div class="card-text"> The goal of the game is to guess the correct letters to uncover the hidden word! There are 118 elements [as of May 2019] and the game will randomly choose one for the hidden word. 
-                                    <br /> Built with JS, HTML, CSS.
-                                </div>
-                            </div>
-                            <div>
-                                <button class="card-btn"><a href="https://github.com/esarnb/Word-Guess-Game" target="_blank">Repo</a></button>
-                                <button class="card-btn"><a href="https://esarnb.github.io/Word-Guess-Game/" target="_blank">Live</a></button>
-                            </div>
-                        </div>
-                    </div>
-                
-            </div>
-        </content>
-        
-    </div>
-
-    <!--  Bootstrap 5: Popper and JS -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
     
     <!-- JQuery Minified hosted by Google -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-    <!-- JQuery Card Fade-In animations -->
+    <!-- Semantic UI -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js" integrity="sha512-dqw6X88iGgZlTsONxZK9ePmJEFrmHwpuMrsUChjAw1mRUhUITE5QU9pkcSox+ynfLhL15Sv2al5A0LVyDCmtUw==" crossorigin="anonymous"></script>
+
+    <!-- local -->
     <script src="./index.js"></script>
     
 </body>
 </html>
+
+<!-- 
+
+    <div class="ui card">
+        <div class="image">
+            <img src="/images/test/placeholder_kristy.png">
+        </div>
+        <div class="content">
+            <a class="header">Kristy</a>
+        <div class="meta">
+            <span class="date">Joined in 2013</span>
+        </div>
+        <div class="description">
+            Kristy is an art director living in New York.
+        </div>
+        </div>
+        <div class="extra content">
+            <a><i class="user icon"></i>22 Friends</a>
+        </div>
+    </div>
+
+ -->
