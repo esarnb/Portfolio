@@ -3,6 +3,17 @@
     /* font-family: 'Josefin Sans', sans-serif; */
 }
 
+navbar {
+    background-color: gray;
+}
+
+#body-left {
+    background-color: blue;
+}
+
+#body-right {
+    background-color: blue;
+}
 
 #footer {
     /* position: static; */
@@ -15,7 +26,11 @@
     /* right: 0px; */
 
 }
-
+/* 
 .card {
     width: 300px !important;
+} */
+
+.body-card {
+    margin: 10px;
 }
