@@ -22,8 +22,8 @@ $(document).ready(function() {
     </div>
     </div>
     <div class="extra content">
-        <a href="${x.repo}"> <button> repo </button> </a>
-        <a href="${x.live}"> <button> live </button> </a>
+        <a href="${x.repo}" target="_blank"> <button> repo </button> </a>
+        <a href="${x.live}" target="_blank"> <button> live </button> </a>
     </div>
 </div>
 `
