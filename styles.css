@@ -3,3 +3,19 @@
     /* font-family: 'Josefin Sans', sans-serif; */
 }
 
+
+#footer {
+    /* position: static; */
+    width: 100%;
+    /* padding: 0px; */
+    
+    
+    /* bottom: 0px; */
+    /* left: 0px; */
+    /* right: 0px; */
+
+}
+
+.card {
+    width: 300px !important;
+}
