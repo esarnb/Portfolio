@@ -67,12 +67,12 @@
     background-color: var(--quinary-light);
 }
 
-
-/* 
 .card {
-    width: 300px !important;
-} */
-/* 
-.body-card {
-    margin: 10px;
-} */
+    width: 200px !important;
+} 
+
+#proj-container {
+    width: fit-content !important;
+    height: fit-content !important;
+}
+
