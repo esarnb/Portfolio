@@ -59,6 +59,14 @@
 }
 
 
+.cards-dark {
+    background-color: var(--quinary-dark);
+}
+
+.cards-light {
+    background-color: var(--quinary-light);
+}
+
 
 /* 
 .card {
