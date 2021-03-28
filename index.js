@@ -14,16 +14,14 @@ $(document).ready(function() {
     </div>
     <div class="content">
         <a class="header">${x.title}</a>
-    <div class="meta">
-        <span>Joined in 2013</span>
-    </div>
+    
     <div class="description">
         ${x.desc}
     </div>
     </div>
     <div class="extra content">
-        <a href="${x.repo}" target="_blank"> <button> repo </button> </a>
-        <a href="${x.live}" target="_blank"> <button> live </button> </a>
+        <a href="${x.repo}" target="_blank" class="card-abtn"> <button class="card-btn"> repo </button> </a>  
+        <a href="${x.live}" target="_blank" class="card-abtn"> <button class="card-btn"> live </button> </a>
     </div>
 </div>
 `

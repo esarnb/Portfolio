@@ -14,7 +14,8 @@
 
 * {
     box-sizing: border-box;
-    /* font-family: 'Josefin Sans', sans-serif; */
+    line-height: 25px;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 .text-dark {
@@ -71,8 +72,27 @@
     width: 300px !important;
 } 
 
+.card-btn {
+    background-color: var(--quartary-light);
+    border: none;
+    color: white;
+    padding: 6px 12px;
+    text-align: center;
+    display: inline-block;
+}
+
+.card-abtn:hover {
+    background-color: red !important;
+    text-decoration:wavy;
+}
+
 #proj-container {
     width: fit-content !important;
     height: fit-content !important;
 }
 
+.ul-skills {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+}
