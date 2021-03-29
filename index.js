@@ -1,6 +1,23 @@
-
 $(document).ready(function() {
     console.log("JQuery")
+    
+    fadeInContent()
+    createProjects()
+
+})
+
+function fadeInContent() {
+    
+    $(".fadeIn").hide();
+    // $(document).on("click", ".fadeInC", function(e) {
+    //     $(this).hide();
+    // })
+    $(".fadeIn").each(function(index) {
+        $(this).delay(200*index).show(1300);
+    });
+}
+
+function createProjects() {
     
     $.getJSON('projects.json', function(data){
         let container = $("#proj-cards-container");
@@ -8,7 +25,7 @@ $(document).ready(function() {
         $.each(data.projects, function(i, x){
             container.append(
 `
-<div class="ui card cards-light">
+<div class="ui card cards-light fadeInC">
     <div class="image">
         <img src="${x.img}">
     </div>
@@ -28,4 +45,5 @@ $(document).ready(function() {
             )
         });
     }).catch((rejected) => console.log(rejected))
-})
+
+}

@@ -25,7 +25,7 @@
       "date": "2021"
     },
     {
-      "title": ">Galactic Guesser",
+      "title": "Galactic Guesser",
       "desc": " Each planet contains a value, and you must match your score to the goal. The catch is, you must match it perfectly...if you go over, you lose! Built with JQuery, HTML, CSS.",
       "repo": "https://github.com/esarnb/Galactic-Guesser",
       "live": "https://esarnb.github.io/Galactic-Guesser/" ,

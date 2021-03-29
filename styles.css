@@ -1,11 +1,11 @@
 :root {
-    --primary-dark: rgb(37, 37, 37);
+    --primary-dark: rgb(58, 58, 58);
     --secondary-dark: rgb(27, 107, 20);
     --tertiary-dark: rgb(25, 123, 136);;
     --quartary-dark: rgb(39, 73, 184);;
     --quinary-dark: rgb(91, 15, 134);;
 
-    --primary-light: rgb(228, 137, 137);
+    --primary-light: rgb(202, 202, 202);
     --secondary-light: rgb(207, 224, 142);
     --tertiary-light: rgb(140, 210, 207);
     --quartary-light: rgb(92, 102, 247);
@@ -18,20 +18,49 @@
     font-family: 'Josefin Sans', sans-serif;
 }
 
+.name {
+    width: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.div-center {
+    justify-content: center;
+}
+
 .text-dark {
     color: black
 }
 
 .text-light {
-    color: white
+    color: white;
 }
 
 .nav-dark {
     background-color: var(--primary-dark)
+    /* background-color: rgba(0, 238, 255, 0.281); */
 }
 
 .nav-light {
     background-color: var(--primary-light)
+    /* background-color: rgba(0, 238, 255, 0.281); */
+}
+
+navbar {
+    height: fit-content;
+    padding-bottom: 0px !important;
+}
+
+.nav-btn {
+    /* background-color: var(--primary-dark); */
+    background-color: rgba(180, 180, 180, 0.384);
+    border: none;
+    color: rgba(255, 255, 255, 0.671);
+    padding: 12px 30px;
+    text-align: center;
+    display: inline-block;
 }
 
 .content-dark {
@@ -52,10 +81,12 @@
 
 
 .proj-dark {
+    /* background-color: transparent; */
     background-color: var(--quartary-dark);
 }
 
 .proj-light {
+    /* background-color: transparent; */
     background-color: var(--quartary-light);
 }
 
@@ -95,4 +126,68 @@
     -webkit-column-count: 3;
     -moz-column-count: 3;
     column-count: 3;
+}
+
+
+
+/* Gradient Background https://codepen.io/P1N2O/pen/xxbjYqx */
+/* .nav-btn, .proj-dark, .proj-light { */
+navbar {
+	background: linear-gradient(-45deg, #ee765285, #e73c7e85, #23a6d585, #23d5ab85);
+	background-size: 400% 400%;
+	animation: gradient 60s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+/* Blurred Boxes https://codepen.io/GreggOD/pen/xLbboZ */
+
+.blurred-box{
+    position: relative;
+    width: 250px;
+    height: 350px;
+    top: calc(50% - 175px);
+    left: calc(50% - 125px);
+    background: inherit;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.blurred-box:after{
+    content: '';
+    width: 300px;
+    height: 300px;
+    background: inherit; 
+    position: absolute;
+    left: -25px;
+    /* left position */
+    right: 0;
+    top: -25px;  
+    /* top position  */
+    bottom: 0;
+    box-shadow: inset 0 0 0 200px rgba(255,255,255,0.05);
+    filter: blur(10px);
+}
+
+.shadow {  
+    background: inherit; 
+    box-shadow: inset 0 0 0 200px rgba(255,255,255,0.05);
+    /* filter: blur(0.1px); */
+}
+
+
+.blurry {  
+    background: inherit; 
+    box-shadow: inset 0 0 0 200px rgba(255,255,255,0.05);
+    filter: blur(0.1px);
 }
