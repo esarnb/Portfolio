@@ -25,14 +25,14 @@ function createProjects() {
         $.each(data.projects, function(i, x){
             container.append(
 `
-<div class="ui card cards-light fadeInC">
-    <div class="image">
+<div class="ui card cards-light fadeInC ">
+    <div class="image  animate__animated animate__fadeInUpBig ">
         <img src="${x.img}">
     </div>
-    <div class="content">
+    <div class="content  animate__animated animate__flipInY">
         <a class="header">${x.title}</a>
     
-    <div class="description">
+    <div class="description  animate__animated animate__flipInX">
         ${x.desc}
     </div>
     </div>
